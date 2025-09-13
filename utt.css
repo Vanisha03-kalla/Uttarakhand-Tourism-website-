@@ -1,0 +1,96 @@
+.dropdown{align-items: center;
+margin-right: 10px;
+
+}
+#form{padding-left: 610px;}
+#divform {
+    position: relative; 
+    /*background-image: url(card4.jpeg);*/
+    
+    background-size: cover; 
+    background-position: center;
+}
+
+#divform::before {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute; /* Make it overlay the parent */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:crimson; 
+
+    z-index: 1; /* Ensure it sits behind the content */
+    pointer-events: none; /* Prevent interaction with the overlay */
+}
+
+/* Ensure the content inside divform is above the pseudo-element */
+#divform > * {
+    position: relative;
+    z-index: 2;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.card{
+    width: 325px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+.card img{
+    width: 100%;
+    height: auto;
+
+}
+.card-content{
+    padding: 16px;
+}
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+.card-content p{
+    color: #666;
+    font-size: 15px;
+    line-height: 1.3;
+
+}
+.card-content .btn{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: #f0f0f0;
+}
+*{text-decoration: none;}
+.navbar{background-color: crimson;font-family: calibari;padding-right: 15px;padding-left: 15px;}
+.navdiv{display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.logo a{font-size: 35px;
+font-weight: 600;
+color: white;}
+li{list-style: none;
+display: inline-block;}
+li a{color: white;
+font-size: 18px;
+font-weight: bold;
+margin-right: 25px;
+}
+button{background-color: black;
+margin-left: 10px;
+border-radius: 10px;
+padding: 10px;
+width: 90px;}
+button a{color: white;
+font-weight: bold;
+font-size: 15px;}

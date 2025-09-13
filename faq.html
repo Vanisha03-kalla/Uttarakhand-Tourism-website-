@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="utt.css"/>
+    
+    <title>FAQ - Uttarakhand Travel</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <style>
+   
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    
+    header {
+      background-color:green;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      text-align: center;
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    
+    main {
+      padding: 40px 0;
+    }
+
+    .faq-container {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+    }
+
+    .faq-container h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #2e3b4e;
+    }
+
+    .faq-container p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    
+    .accordion .faq-item {
+      margin-bottom: 15px;
+    }
+
+    .accordion-btn {
+      background-color: burlywood;
+      color: #fff;
+      padding: 15px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .accordion-btn:hover {
+      background-color: darkgoldenrod;
+    }
+
+    .accordion-content {
+      padding: 15px;
+      background-color: #f4f4f4;
+      border-radius: 5px;
+      display: none;
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+
+    .accordion-content ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .accordion-content li {
+      margin-bottom: 10px;
+    }
+
+    
+    .ask-question-section {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 40px;
+    }
+
+    .ask-question-section h3 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    .ask-question-section p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      font-size: 1.1em;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .submit-btn {
+      background-color: #2e3b4e;
+      color: #fff;
+      padding: 12px 20px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #3a4f69;
+    }
+
+    .success-message {
+      background-color: #d4edda;
+      padding: 15px;
+      border-radius: 5px;
+      display: none;
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: #155724;
+    }
+
+    
+    footer {
+      background-color: #2e4e42;
+      color: #fff;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 1em;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        width: 95%;
+      }
+
+      header h1 {
+        font-size: 2em;
+      }
+
+      .faq-container h2 {
+        font-size: 1.8em;
+      }
+
+      .faq-item h3 {
+        font-size: 1.3em;
+      }
+
+      .faq-item li {
+        font-size: 1em;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="#">UTT</a></div>
+            <ul>
+                <li><a href="utt.html">HOME</a></li>
+                <li><a href="explore.html">EXPLORE</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="tp.html">TOURISM POLICY 2025</a></li>
+                <li><a href="bk.html">BOOK HOMESTAY</a></li>
+                <button><a href="#">SignIn</a></button>
+                <button><a href="#">LogIn</a></button>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+          <h1>Uttarakhand Travel FAQ</h1>
+        </div>
+      </header>
+    
+      
+      <main>
+        <div class="faq-container">
+          <h2>Frequently Asked Questions</h2>
+          <p>Welcome to our Uttarakhand travel FAQ page! Here you'll find answers to the most commonly asked questions to help you plan your perfect trip to this beautiful state in the Himalayas.</p>
+    
+          
+          <div class="accordion">
+    
+            <div class="faq-item">
+              <button class="accordion-btn">What is the best time to visit Uttarakhand?</button>
+              <div class="accordion-content">
+                <p>The best time to visit Uttarakhand depends on what you're looking for:</p>
+                <ul>
+                  <li><strong>Summer (March to June):</strong> Ideal for trekking, sightseeing, and outdoor activities.</li>
+                  <li><strong>Monsoon (July to September):</strong> Avoid this period due to heavy rainfall and possible landslides.</li>
+                  <li><strong>Winter (October to February):</strong> Perfect for snow sports and experiencing snowfall.</li>
+                </ul>
+              </div>
+            </div>
+    
+            <div class="faq-item">
+              <button class="accordion-btn">How can I reach Uttarakhand?</button>
+              <div class="accordion-content">
+                <p>You can reach Uttarakhand by:</p>
+                <ul>
+                  <li><strong>By Air:</strong> The nearest airport is Jolly Grant Airport, Dehradun.</li>
+                  <li><strong>By Train:</strong> Well-connected railway stations in Haridwar, Dehradun, and Nainital.</li>
+                  <li><strong>By Road:</strong> Good road connectivity from nearby states with buses, taxis, and rental cars available.</li>
+                </ul>
+              </div>
+            </div>
+    
+            <div class="faq-item">
+              <button class="accordion-btn">Is Uttarakhand safe for tourists?</button>
+              <div class="accordion-content">
+                <p>Yes, Uttarakhand is generally safe. However, always exercise caution, especially in remote areas, and follow safety guidelines for activities like trekking and rafting.</p>
+              </div>
+            </div>
+    
+            <div class="faq-item">
+              <button class="accordion-btn">What are the must-visit places in Uttarakhand?</button>
+              <div class="accordion-content">
+                <p>Top destinations include:</p>
+                <ul>
+                  <li><strong>Nainital:</strong> Famous for its lakes and serene surroundings.</li>
+                  <li><strong>Rishikesh:</strong> Known for yoga, spirituality, and adventure sports.</li>
+                  <li><strong>Auli:</strong> A skiing destination with stunning views.</li>
+                  <li><strong>Valley of Flowers:</strong> A UNESCO World Heritage site with breathtaking meadows.</li>
+                </ul>
+              </div>
+            </div>
+    
+            <div class="faq-item">
+              <button class="accordion-btn">What activities can I do in Uttarakhand?</button>
+              <div class="accordion-content">
+                <p>Uttarakhand offers activities for all types of travelers:</p>
+                <ul>
+                  <li><strong>Trekking:</strong> Explore the Roopkund, Kedarkantha, and Valley of Flowers.</li>
+                  <li><strong>Rafting:</strong> Enjoy rafting in the Ganges at Rishikesh.</li>
+                  <li><strong>Skiing:</strong> Ski in Auli during the winter months.</li>
+                  <li><strong>Pilgrimage:</strong> Visit Char Dham for spiritual journeys.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          
+          <div class="ask-question-section">
+            <h3>Ask Your Question</h3>
+            <p>Didn't find your answer? Feel free to ask us your question, and we'll get back to you!</p>
+            <form id="ask-question-form">
+              <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="question">Your Question:</label>
+                <textarea id="question" name="question" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Submit</button>
+            </form>
+            <div id="success-message" class="success-message">
+              <p>Thank you! Your question has been submitted successfully.</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    
+      
+      <footer>
+        <div class="container">
+          <p>&copy; 2024 Uttarakhand Travel. All Rights Reserved.</p>
+        </div>
+      </footer>
+    
+      <script>
+        // JavaScript to toggle accordion content visibility
+        document.addEventListener("DOMContentLoaded", function() {
+          const accordionBtns = document.querySelectorAll(".accordion-btn");
+    
+          accordionBtns.forEach(btn => {
+            btn.addEventListener("click", function() {
+              // Toggle active class to change style
+              this.classList.toggle("active");
+    
+              // Toggle visibility of the corresponding content
+              const content = this.nextElementSibling;
+              if (content.style.display === "block") {
+                content.style.display = "none";
+              } else {
+                content.style.display = "block";
+              }
+            });
+          });
+    
+          // JavaScript for "Ask a Question" form submission
+          const form = document.getElementById('ask-question-form');
+          const successMessage = document.getElementById('success-message');
+         
+          form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            // Show success message
+            successMessage.style.display = 'block';
+            // Reset form
+            form.reset();
+          });
+        });
+      </script>
+    </body>
+    </html
+    </body>
